@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beyond the Bounce Mobile App</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef6ff;
+  color: #172033;
+}
+.app {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #ffffff;
+  box-shadow: 0 0 25px rgba(0,0,0,.12);
+  padding-bottom: 86px;
+}
+.hero {
+  background: linear-gradient(135deg, #1652a3, #19a7ce);
+  color: white;
+  padding: 28px 20px 24px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  text-align: center;
+}
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,.2);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.closed {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ffffff;
+  color: #b42318;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+}
+.hero h1 {
+  margin: 8px 0 6px;
+  font-size: 31px;
+  line-height: 1.05;
+}
+.hero p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+.quick {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 18px;
+}
+.quick a {
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 10px;
+  background: #f2f7ff;
+  color: #1652a3;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+.donate {
+  display: block;
+  margin: 0 18px 18px;
+  text-align: center;
+  background: #ffb703;
+  color: #172033;
+  padding: 16px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+}
+.card {
+  margin: 0 18px 16px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e3edf7;
+  box-shadow: 0 6px 18px rgba(22,82,163,.08);
+}
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #1652a3;
+}
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timeline li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eef2f6;
+  display: flex;
+  gap: 12px;
+}
+.timeline li:last-child { border-bottom: 0; }
+.time {
+  min-width: 92px;
+  font-weight: bold;
+  color: #19a7ce;
+}
+.info { line-height: 1.45; }
+.info strong { display: block; color: #172033; }
+.pillbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pill {
+  background: #eef6ff;
+  color: #1652a3;
+  padding: 9px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.bottomnav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  border-top: 1px solid #dce8f4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 8px 4px 10px;
+}
+.bottomnav a {
+  text-align: center;
+  text-decoration: none;
+  color: #1652a3;
+  font-size: 12px;
+  font-weight: bold;
+}
+.icon {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+.small {
+  font-size: 13px;
+  color: #4b5b70;
+  line-height: 1.45;
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="hero" id="home">
+    <div class="badge">One-Day Community Event</div>
+    <h1>Beyond the Bounce</h1>
+    <p>Autism Awareness Event</p>
+    <p><strong>Saturday, July 25 • 10:00 AM – 2:00 PM</strong></p>
+    <p>10301 W. Seven Mile Rd., Detroit, MI 48221</p>
+    <div class="closed">Registration Closed</div>
+  </section>
+
+  <div class="quick">
+    <a href="#schedule">📅 Schedule</a>
+    <a href="#coaches">🤝 Coaches</a>
+    <a href="#services">💙 Services</a>
+    <a href="#contact">☎ Contact</a>
+  </div>
+
+  <a class="donate" href="https://www.zeffy.com/en-US/donation-form/beyond-the-bounce-autism-awareness" target="_blank">💛 Donate Now</a>
+
+  <section class="card" id="schedule">
+    <h2>Event Timeline</h2>
+    <ul class="timeline">
+      <li>
+        <span class="time">9:30 AM</span>
+        <span class="info"><strong>Check-In & Registration</strong>Participant check-in and welcome.</span>
+      </li>
+      <li>
+        <span class="time">10:00–11:00</span>
+        <span class="info"><strong>Ages 5–8 Session</strong>Coach-led activities with parent participation. Three free haircut appointments available. Sensory room available as needed.</span>
+      </li>
+      <li>
+        <span class="time">11:00–11:15</span>
+        <span class="info"><strong>Transition Break</strong>Concessions, resource tables, and sensory room access.</span>
+      </li>
+      <li>
+        <span class="time">11:15–12:15</span>
+        <span class="info"><strong>Ages 9–11 Session</strong>Coach-led activities with parent participation. Three free haircut appointments available. Sensory room available as needed.</span>
+      </li>
+      <li>
+        <span class="time">12:15–12:30</span>
+        <span class="info"><strong>Transition Break</strong>Concessions, resource tables, and sensory room access.</span>
+      </li>
+      <li>
+        <span class="time">12:30–1:30</span>
+        <span class="info"><strong>Ages 12–17 Session</strong>Coach-led activities with parent participation. Three free haircut appointments available. Sensory room available as needed.</span>
+      </li>
+      <li>
+        <span class="time">1:30–2:00</span>
+        <span class="info"><strong>Closing Celebration</strong>Recognition, group photo, thank-you acknowledgments, and closing remarks.</span>
+      </li>
+      <li>
+        <span class="time">2:00 PM</span>
+        <span class="info"><strong>Event Concludes</strong></span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="card" id="services">
+    <h2>Available Throughout the Event</h2>
+    <div class="pillbox">
+      <span class="pill">🍿 Concessions</span>
+      <span class="pill">💈 Free Haircuts</span>
+      <span class="pill">💙 Sensory Room</span>
+      <span class="pill">🤝 Resource Tables</span>
+    </div>
+    <p class="small">Free haircuts are limited to three appointments during each age-group session. The sensory room is available whenever a participant needs a quiet, calming space.</p>
+  </section>
+
+  <section class="card" id="coaches">
+    <h2>Coach Check-In</h2>
+    <p class="small">Coaches working with autistic children should arrive by 9:15 AM, check in with event leadership, attend the final huddle, and confirm their assigned activity area.</p>
+    <div class="pillbox">
+      <span class="pill">Signed commitment required</span>
+      <span class="pill">Parent participation</span>
+      <span class="pill">Safety first</span>
+      <span class="pill">Support every child</span>
+    </div>
+  </section>
+
+  <section class="card" id="sponsors">
+    <h2>Sponsors & Donations</h2>
+    <p class="small">Financial sponsorship helps cover food, activities, supplies, and autism awareness resources for families.</p>
+    <a class="donate" style="margin:12px 0 0;" href="https://www.zeffy.com/en-US/donation-form/beyond-the-bounce-autism-awareness" target="_blank">Give a Donation</a>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>Contact</h2>
+    <p class="small"><strong>Beyond the Bounce Autism Awareness Event</strong></p>
+    <p class="small">For questions, sponsorships, coach details, or day-of-event support, contact the event organizer.</p>
+  </section>
+
+  <nav class="bottomnav">
+    <a href="#home"><span class="icon">🏠</span>Home</a>
+    <a href="#schedule"><span class="icon">📅</span>Schedule</a>
+    <a href="https://www.zeffy.com/en-US/donation-form/beyond-the-bounce-autism-awareness" target="_blank"><span class="icon">💛</span>Donate</a>
+    <a href="#contact"><span class="icon">☎</span>Contact</a>
+  </nav>
+</div>
+</body>
+</html>
