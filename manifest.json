@@ -1,0 +1,9 @@
+{
+  "name": "Beyond the Bounce",
+  "short_name": "Beyond Bounce",
+  "start_url": "./?v=3",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1652a3",
+  "icons": []
+}
